@@ -7,7 +7,7 @@ It can also be launched under terminal (to monitor eventual error messages):\
 `flatpak run com.github.mike632t.x11-calc`
 
 User can launch any of the project calculator simulator. Preferred calculator model reference is set by editing:\
-`nano ~/.var/app/com.github.mike632t.x11-calc/config/model.conf`\
+`nano ~/.var/app/com.github.mike632t.x11-calc/config/x11-calc.conf`\
 (default is `MODEL=35`)
 
 Voyager models (10c, 11c, 12c, 15c, 16c) can be used if relevant rom file is supplied at:\

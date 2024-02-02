@@ -3,13 +3,13 @@
 MODEL=""
 OPTS=""
 
-if ! [ -f "${XDG_CONFIG_HOME}"/model.conf ]; then
-	cat <<-EOF >"${XDG_CONFIG_HOME}"/model.conf
+if ! [ -f "${XDG_CONFIG_HOME}"/x11-calc.conf ]; then
+	cat <<-EOF >"${XDG_CONFIG_HOME}"/x11-calc.conf
 		MODEL=35
 		OPTS=""
 		EOF
 fi
-. "${XDG_CONFIG_HOME}"/model.conf
+. "${XDG_CONFIG_HOME}"/x11-calc.conf
 [ -z "$MODEL" ] && exit 1
 
 case $MODEL in
