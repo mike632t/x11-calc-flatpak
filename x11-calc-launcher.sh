@@ -3,12 +3,14 @@
 MODEL=""
 OPTS=""
 
+_launch() {
 if ! [ -f "${XDG_CONFIG_HOME}"/x11-calc.conf ]; then
 	cat <<-EOF >"${XDG_CONFIG_HOME}"/x11-calc.conf
 		MODEL=35
 		OPTS=""
 		EOF
 fi
+# shellcheck disable=SC1090  # intended include
 . "${XDG_CONFIG_HOME}"/x11-calc.conf
 [ -z "$MODEL" ] && exit 1
 
@@ -20,5 +22,22 @@ case $MODEL in
 	;;
 esac
 
+# shellcheck disable=SC2086  # intended for parameter passsing
 exec /app/bin/x11-calc-${MODEL} ${OPTS}
+}
+
+_setup() {
+nano "${XDG_CONFIG_HOME}"/x11-calc.conf
+}
+
+
+case $1 in
+	--setup)
+		_setup
+	;;
+	*)
+		_launch
+	;;
+esac
+
 

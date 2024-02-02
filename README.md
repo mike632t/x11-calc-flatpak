@@ -6,7 +6,9 @@ This is a preliminary [x-11-calc](https://github.com/mike632t/x11-calc) flatpak 
 It can also be launched under terminal (to monitor eventual error messages):\
 `flatpak run com.github.mike632t.x11-calc`
 
-User can launch any of the project calculator simulator. Preferred calculator model reference is set by editing:\
+User can launch any of the project calculator simulator. Preferred calculator model reference can be set by running in terminal:\
+`flatpak run com.github.mike632t.x11-calc --setup`\
+or similarly editing:\
 `nano ~/.var/app/com.github.mike632t.x11-calc/config/x11-calc.conf`\
 (default is `MODEL=35`)
 
