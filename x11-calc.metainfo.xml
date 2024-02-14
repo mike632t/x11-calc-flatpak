@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.mike632t.x11_calc</id>
+  
+  <name>x11-calc</name>
+  <summary>Simulators for HP RPN calculators</summary>
+  
+  <metadata_license>CC-BY-4.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  
+  <description>
+    <p>
+      Simulators for the HP 35, HP 80, HP 45, HP 70, HP 10, HP 21, HP 22, HP25, HP 25C, HP 27, HP 29C, HP 31E, HP 32E, HP 33E, HP 33C, HP 34C, HP 37E, HP 38C, HP 38E, HP 67, HP 10C, HP 11C, HP 12C, HP 15 C, and HP 16C.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">io.github.mike632t.x11_calc.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/mike632t/x11-calc/blob/stable/img/x11-calc-35.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://github.com/mike632t/x11-calc/blob/stable/img/x11-calc-11c.png</image>
+    </screenshot>
+  </screenshots>
+</component>
