@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>io.github.mike632t.x11_calc</id>
-  
+
   <name>x11-calc</name>
   <summary>Simulators for HP RPN calculators</summary>
-  
+
   <metadata_license>CC-BY-4.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  
+
   <description>
-    <p>
-      Simulators for the HP 35, HP 80, HP 45, HP 70, HP 10, HP 21, HP 22, HP25, HP 25C, HP 27, HP 29C, HP 31E, HP 32E, HP 33E, HP 33C, HP 34C, HP 37E, HP 38C, HP 38E, HP 67, HP 10C, HP 11C, HP 12C, HP 15 C, and HP 16C.
-    </p>
+      <p>Available simulators models are:</p>
+      <ul>
+          <li>Classics (HP 35, HP 80, HP 45, HP 70)</li>
+          <li>Second Generation (HP 10, HP 21, HP 22, HP 25, HP 25C, HP 27, HP 29C, HP 67)</li>
+          <li>Third Generation (HP 31E, HP 32E, HP 33E, HP 33C, HP 34C, HP 37E, HP 38C, HP 38E)</li>
+          <li>Voyager series (HP 10C, HP 11C, HP 12C, HP 15C, and HP 16C)</li>
+      </ul>
+    <p>Default model is 35. Run <code>flatpak run io.github.mike632t.x11_calc --setup</code> to set preferred model.</p>
   </description>
-  
+
   <launchable type="desktop-id">io.github.mike632t.x11_calc.desktop</launchable>
+  <content_rating type="oars-1.1" />
+
+  <url type="homepage">https://github.com/mike632t/x11-calc</url>
+  <url type="bugtracker">https://github.com/mike632t/x11-calc/issues</url>
+  <url type="vcs-browser">https://github.com/mike632t/x11-calc</url>
+
   <screenshots>
     <screenshot type="default">
-      <image>https://github.com/mike632t/x11-calc/blob/stable/img/x11-calc-35.png</image>
+      <image>https://raw.githubusercontent.com/mike632t/x11-calc/stable/img/x11-calc-35.png</image>
+      <caption>HP 35</caption>
     </screenshot>
     <screenshot>
-      <image>https://github.com/mike632t/x11-calc/blob/stable/img/x11-calc-11c.png</image>
+      <image>https://raw.githubusercontent.com/mike632t/x11-calc/stable/img/x11-calc-11c.png</image>
+      <caption>HP 11c</caption>
     </screenshot>
   </screenshots>
+
+  <releases>
+  <release version="0.2" date="2024-02-14">
+    <description>
+      <p>Initial release</p>
+    </description>
+  </release>
+</releases>
+
 </component>
