@@ -28,8 +28,21 @@ nano "${XDG_CONFIG_HOME}"/x11-calc/x11-calc.conf
 if ! [ -f "${XDG_CONFIG_HOME}"/x11-calc/x11-calc.conf ]; then
 	mkdir -p "${XDG_CONFIG_HOME}"/x11-calc
 	cat <<-EOF >"${XDG_CONFIG_HOME}"/x11-calc/x11-calc.conf
+		# define emulator model to be run:
 		MODEL=35
+
+		# OPTS may contain options as one-liner string to specify:
+		# * preferred non-default save-state file path to be loaded
+		# (like sample prg presets from /app/share/x11-calc/prg/)
+		# * non-default .rom file path (-r prefix)
+		# * other debug options...
+		# more info at https://github.com/mike632t/x11-calc
 		OPTS=""
+		
+		# To diagnose errors, run from command-line:
+		# flatpak run io.github.mike632t.x11_calc
+		# To call this setup again:
+		# flatpak run io.github.mike632t.x11_calc --setup
 		EOF
 fi
 

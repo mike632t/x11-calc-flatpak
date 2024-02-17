@@ -19,6 +19,8 @@ modules:
     post-install:
       - install -Dm755 x11-calc-launcher.sh /app/bin/x11-calc-launcher.sh
       - install -m755 bin/* /app/bin/
+      - install -dm755 /app/share/x11-calc/prg
+      - install -m644 prg/* /app/share/x11-calc/prg
       - install -Dm644 x11-calc.desktop /app/share/applications/$FLATPAK_ID.desktop
       - install -Dm644 src/x11-calc.svg /app/share/icons/hicolor/scalable/apps/$FLATPAK_ID.svg
       - install -Dm644 x11-calc.metainfo.xml /app/share/metainfo/$FLATPAK_ID.metainfo.xml
