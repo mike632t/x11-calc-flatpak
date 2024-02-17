@@ -25,7 +25,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mike632t/x11-calc.git
-        branch: unstable
+        branch: stable
 #        tag: TBD
 #        commit: TBD
       - type: file
